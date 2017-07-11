@@ -1,3 +1,5 @@
+<h1><%= link_to "Create a New Book", new_book_path %></h2>
+
 <% @books.each do |book| %>
   <li><%= link_to book.title, book_path(book) %> - <%= book.quantity %></li>
 <% end %>
