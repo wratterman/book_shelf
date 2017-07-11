@@ -1,14 +1,3 @@
 <h1> Create a New Book </h1>
 
-<%= form_for @book do |t| %>
-  <%= t.label :title %>
-  <%= t.text_field :title %>
-
-  <%= t.label :price %>
-  <%= t.text_field :price %>
-
-  <%= t.label :quantity %>
-  <%= t.text_field :quantity %>
-
-  <%= t.button :submit %>
-<% end %>
+<%= render partial: 'form'%>
